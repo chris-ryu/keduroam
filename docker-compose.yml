@@ -9,7 +9,7 @@ services:
     - 80:80
     environment: 
     - CLIENT_NET="0.0.0.0/0"
-    - REALM="songwon.ac.kr"
+    - REALM="unviersity.ac.kr"
     volumes:
     - ./freeradius_conf/proxy.conf:/etc/freeradius/proxy.conf
     - ./mysql_data:/var/lib/mysql
@@ -37,6 +37,7 @@ services:
       - '8126:8126'
       - '2003:2003'
     depends_on:
+      - keduroam-rest
       - keduroam-radius
     volumes:
       - ./docker-grafana-graphite/data/whisper:/opt/graphite/storage/whisper
