@@ -1,0 +1,51 @@
+
+version: '3'
+services:
+  keduroam-radius:
+    container_name: keduroam-radius
+    image: chrisryu/keduroam-radius:latest
+    ports:
+    - 1812-1813:1812-1813/udp
+    - 80:80
+    environment: 
+    - CLIENT_NET="0.0.0.0/0"
+    - REALM="songwon.ac.kr"
+    volumes:
+    - ./freeradius_conf/proxy.conf:/etc/freeradius/proxy.conf
+    - ./mysql_data:/var/lib/mysql
+    depends_on:
+    - keduroam-rest
+    # - oracledb
+    # - mssqldb
+
+  keduroam-rest:
+    container_name: keduroam-rest
+    image: chrisryu/keduroam-rest:latest
+    ports:
+    - 4000:4000
+    - 27017:27017
+    volumes:
+    - ./mongodb_data:/app/mongodb_data
+            
+  keduroam-grafana-graphite:
+    image: kamon/grafana_graphite
+    container_name: kamon-grafana-dashboard
+    ports:
+      - '8080:80'
+      - '81:81'
+      - '8125:8125/udp'
+      - '8126:8126'
+      - '2003:2003'
+    depends_on:
+      - keduroam-radius
+    volumes:
+      - ./docker-grafana-graphite/data/whisper:/opt/graphite/storage/whisper
+      - ./docker-grafana-graphite/data/grafana:/opt/grafana/data
+      - ./docker-grafana-graphite/log/graphite:/opt/graphite/storage/log
+      - ./docker-grafana-graphite/log/supervisor:/var/log/supervisor
+
+volumes:       
+  mongodb_data:
+    external: true
+  mysql_data:
+    external: true
