@@ -21,20 +21,19 @@ services:
   keduroam-rest:
     container_name: keduroam-rest
     image: chrisryu/keduroam-rest:latest
-    build: ../REST-API-FreeRADIUS
     ports:
     - 4000:4000
     - 27017:27017
     volumes:
     - ./mongodb_data:/app/mongodb_data
     environment: 
-    - USER_NAME=
-    - PASSWORD=
-    - DATABASE=eduroam
-    - HOST=
-    - POSRT=1410
-    - DB_TYPE=
-    - AUTH_QUERY=select * from users where username=':username' and password=HashBytes('SHA2_256', ':password')
+    - USER_NAME=scott
+    - PASSWORD=tiger
+    - DATABASE=XEPDB1
+    - HOST=0.0.0.0
+    - DB_PORT=1521
+    - DB_TYPE=[oracle|mssql]
+    - AUTH_QUERY=SELECT * FROM users WHERE username = ':username' and PASSWORD=DBMS_CRYPTO.HASH(UTL_I18N.STRING_TO_RAW(':password', 'AL32UTF8'), 4)
             
   keduroam-grafana-graphite:
     image: kamon/grafana_graphite
