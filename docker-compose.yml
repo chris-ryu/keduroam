@@ -2,16 +2,16 @@
 version: '3'
 services:
   keduroam-radius:
+    restart: always
     container_name: keduroam-radius
     image: chrisryu/keduroam-radius:latest
     ports:
     - 1812-1813:1812-1813/udp
     - 80:80
-    environment: 
-    - CLIENT_NET="0.0.0.0/0"
-    - REALM="unviersity.ac.kr"
+    env_file: 
+    - ./envs/freeradius.env
+    - ./envs/global.env
     volumes:
-    - ./freeradius_conf/proxy.conf:/etc/freeradius/proxy.conf
     - mysql_data:/var/lib/mysql
     depends_on:
     - keduroam-rest
@@ -19,6 +19,7 @@ services:
     # - mssqldb
 
   keduroam-rest:
+    restart: always
     container_name: keduroam-rest
     image: chrisryu/keduroam-rest:latest
     ports:
@@ -26,15 +27,9 @@ services:
     - 27017:27017
     volumes:
     - ./mongodb_data:/app/mongodb_data
-    environment: 
-    - USER_NAME=scott
-    - PASSWORD=tiger
-    - DATABASE=XEPDB1
-    - HOST=0.0.0.0
-    - DB_PORT=1521
-    - DB_TYPE=[oracle|mssql]
-    - AUTH_QUERY=SELECT * FROM users WHERE username = ':username' and PASSWORD=DBMS_CRYPTO.HASH(UTL_I18N.STRING_TO_RAW(':password', 'AL32UTF8'), 4)
-            
+    env_file:
+    - ./envs/db_server_oracle.env
+
   keduroam-grafana-graphite:
     image: kamon/grafana_graphite
     container_name: kamon-grafana-dashboard
