@@ -30,11 +30,11 @@ services:
     environment: 
     - USER_NAME=
     - PASSWORD=
-    - DATABASE=XEPDB1
+    - DATABASE=eduroam
     - HOST=
-    - POSRT=32518
-    - DB_TYPE=oracle
-    - ATUH_QUERY="SELECT * FROM users WHERE username = :username and PASSWORD=DBMS_CRYPTO.HASH(UTL_I18N.STRING_TO_RAW(:password, 'AL32UTF8'), 4)"
+    - POSRT=1410
+    - DB_TYPE=
+    - AUTH_QUERY=select * from users where username=':username' and password=HashBytes('SHA2_256', ':password')
             
   keduroam-grafana-graphite:
     image: kamon/grafana_graphite
