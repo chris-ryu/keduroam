@@ -9,10 +9,11 @@ services:
     - 1812-1813:1812-1813/udp
     - 80:80
     env_file: 
-    - ./envs/freeradius.env
+    - ./envs/keduroam.env
     - ./envs/global.env
     volumes:
     - mysql_data:/var/lib/mysql
+    - /etc/localtime:/etc/localtime:ro
     depends_on:
     - keduroam-rest
     # - oracledb
