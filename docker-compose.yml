@@ -31,7 +31,7 @@ services:
     env_file:
     - ./envs/db_server_oracle.env
 
-  keduroam-grafana-graphite:
+  keduroam-grafana-dashboard:
     image: kamon/grafana_graphite
     container_name: kamon-grafana-dashboard
     ports:
@@ -40,9 +40,9 @@ services:
       - '8125:8125/udp'
       - '8126:8126'
       - '2003:2003'
-    depends_on:
-      - keduroam-rest
-      - keduroam-radius
+    # depends_on:
+    #   - keduroam-rest
+    #   - keduroam-radius
     volumes:
       - ./docker-grafana-graphite/data/whisper:/opt/graphite/storage/whisper
       - ./docker-grafana-graphite/data/grafana:/opt/grafana/data
