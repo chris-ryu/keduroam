@@ -1,15 +1,33 @@
-run:
+prep:
+	mkdir -p \
+		dashboard_state/data/whisper \
+		dashboard_state/data/elasticsearch \
+		dashboard_state/data/grafana \
+		dashboard_state/log/graphite \
+		dashboard_state/log/graphite/webapp \
+		dashboard_state/log/elasticsearch
+
+pull :
+	docker-compose pull
+
+run: prep pull dashboard
 	docker volume create mongodb_data
 	docker volume create mysql_data
 	docker-compose -f docker-compose.yml up keduroam-radius
 
 dashboard:
-	mkdir -p docker-grafana-graphite/data/whisper
-	mkdir -p docker-grafana-graphite/data/grafana
-	mkdir -p docker-grafana-graphite/log/graphite
-	mkdir -p docker-grafana-graphite/log/supervisor
-	docker-compose -f docker-compose.yml up keduroam-grafana-dashboard
+	docker-compose -f docker-compose.yml up keduroam-dashboard
 
 pull:
-	docker pull keduroam-radius
-	docker pull keduroam-rest
+	docker pull chrisryu/keduroam-radius
+	docker pull chrisryu/keduroam-rest
+	docker pull chrisryu/keduroam-dashboard
+
+down :
+	docker-compose down
+
+shell :
+	docker exec -ti keduroam-radius /bin/bash
+
+tail :
+	docker logs -f keduroam-radius
