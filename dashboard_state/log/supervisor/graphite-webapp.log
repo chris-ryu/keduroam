@@ -1,0 +1,120 @@
+[2019-11-04 00:02:47 +0000] [23] [INFO] Starting gunicorn 19.9.0
+[2019-11-04 00:02:47 +0000] [23] [INFO] Listening at: http://127.0.0.1:8000 (23)
+[2019-11-04 00:02:47 +0000] [23] [INFO] Using worker: sync
+[2019-11-04 00:02:47 +0000] [39] [INFO] Booting worker with pid: 39
+[2019-11-04 00:02:47 +0000] [40] [INFO] Booting worker with pid: 40
+[2019-11-04 00:02:47 +0000] [43] [INFO] Booting worker with pid: 43
+[2019-11-04 00:02:47 +0000] [44] [INFO] Booting worker with pid: 44
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+[2019-11-04 00:06:24 +0000] [26] [INFO] Starting gunicorn 19.9.0
+[2019-11-04 00:06:24 +0000] [26] [INFO] Listening at: http://127.0.0.1:8000 (26)
+[2019-11-04 00:06:24 +0000] [26] [INFO] Using worker: sync
+[2019-11-04 00:06:24 +0000] [43] [INFO] Booting worker with pid: 43
+[2019-11-04 00:06:24 +0000] [46] [INFO] Booting worker with pid: 46
+[2019-11-04 00:06:24 +0000] [47] [INFO] Booting worker with pid: 47
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+[2019-11-04 00:06:24 +0000] [48] [INFO] Booting worker with pid: 48
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+[2019-11-04 02:15:20 +0000] [23] [INFO] Starting gunicorn 19.9.0
+[2019-11-04 02:15:20 +0000] [23] [INFO] Listening at: http://127.0.0.1:8000 (23)
+[2019-11-04 02:15:20 +0000] [23] [INFO] Using worker: sync
+[2019-11-04 02:15:20 +0000] [45] [INFO] Booting worker with pid: 45
+[2019-11-04 02:15:20 +0000] [48] [INFO] Booting worker with pid: 48
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+[2019-11-04 02:15:20 +0000] [49] [INFO] Booting worker with pid: 49
+[2019-11-04 02:15:20 +0000] [50] [INFO] Booting worker with pid: 50
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+[2019-11-04 02:26:43 +0000] [22] [INFO] Starting gunicorn 19.9.0
+[2019-11-04 02:26:43 +0000] [22] [INFO] Listening at: http://127.0.0.1:8000 (22)
+[2019-11-04 02:26:43 +0000] [22] [INFO] Using worker: sync
+[2019-11-04 02:26:43 +0000] [45] [INFO] Booting worker with pid: 45
+[2019-11-04 02:26:43 +0000] [49] [INFO] Booting worker with pid: 49
+[2019-11-04 02:26:43 +0000] [50] [INFO] Booting worker with pid: 50
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+[2019-11-04 02:26:43 +0000] [51] [INFO] Booting worker with pid: 51
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+[2019-11-04 02:29:13 +0000] [22] [CRITICAL] WORKER TIMEOUT (pid:50)
+[2019-11-04 04:33:03 +0000] [16] [INFO] Starting gunicorn 19.9.0
+[2019-11-04 04:33:03 +0000] [16] [INFO] Listening at: http://127.0.0.1:8000 (16)
+[2019-11-04 04:33:03 +0000] [16] [INFO] Using worker: sync
+[2019-11-04 04:33:03 +0000] [42] [INFO] Booting worker with pid: 42
+[2019-11-04 04:33:03 +0000] [45] [INFO] Booting worker with pid: 45
+[2019-11-04 04:33:03 +0000] [47] [INFO] Booting worker with pid: 47
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+[2019-11-04 04:33:03 +0000] [48] [INFO] Booting worker with pid: 48
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+[2019-11-04 05:28:04 +0000] [16] [CRITICAL] WORKER TIMEOUT (pid:48)
+[2019-11-04 05:28:04 +0000] [16] [CRITICAL] WORKER TIMEOUT (pid:42)
+[2019-11-04 05:28:04 +0000] [16] [CRITICAL] WORKER TIMEOUT (pid:45)
+[2019-11-04 05:28:04 +0000] [16] [CRITICAL] WORKER TIMEOUT (pid:47)
+[2019-11-04 05:28:04 +0000] [48] [INFO] Worker exiting (pid: 48)
+[2019-11-04 05:28:04 +0000] [42] [INFO] Worker exiting (pid: 42)
+[2019-11-04 05:28:04 +0000] [47] [INFO] Worker exiting (pid: 47)
+[2019-11-04 05:28:04 +0000] [45] [INFO] Worker exiting (pid: 45)
+[2019-11-04 05:28:05 +0000] [222] [INFO] Booting worker with pid: 222
+[2019-11-04 05:28:05 +0000] [223] [INFO] Booting worker with pid: 223
+[2019-11-04 05:28:05 +0000] [224] [INFO] Booting worker with pid: 224
+[2019-11-04 05:28:05 +0000] [225] [INFO] Booting worker with pid: 225
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/opt/graphite/webapp/graphite/local_settings.py:341: UserWarning: SECRET_KEY is set to an unsafe default. This should be set in local_settings.py for better security
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))
+/usr/lib/python2.7/site-packages/whitenoise/base.py:116: UserWarning: No directory at: /opt/graphite/static/
+  warnings.warn(u"No directory at: {}".format(root))

@@ -34,7 +34,7 @@ services:
     - ./envs/db_server_oracle.env
 
   keduroam-dashboard:
-    image: chrisryu/grafana_graphite:latest
+    image: chrisryu/keduroam-dashboard:latest
     container_name: keduroam-dashboard
     ports:
       - '8080:80'

@@ -7,6 +7,7 @@ prep:
 		dashboard_state/log/graphite/webapp \
 		dashboard_state/log/elasticsearch
 
+
 pull :
 	docker-compose pull
 
@@ -16,7 +17,7 @@ run: prep pull dashboard
 	docker-compose -f docker-compose.yml up keduroam-radius
 
 dashboard:
-	docker-compose -f docker-compose.yml up keduroam-dashboard
+	docker-compose -f docker-compose.yml up -d keduroam-dashboard
 
 pull:
 	docker pull chrisryu/keduroam-radius
@@ -31,3 +32,11 @@ shell :
 
 tail :
 	docker logs -f keduroam-radius
+
+reset : prep pull
+	-docker rm -f keduroam-radius 
+	-docker rm -f keduroam-rest
+	-docker rm -f keduroam-dashboard
+	-docker volume rm mysql_data
+	docker volume create mysql_data
+
