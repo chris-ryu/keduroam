@@ -7,7 +7,6 @@ prep:
 		dashboard_state/log/graphite/webapp \
 		dashboard_state/log/elasticsearch
 
-
 pull :
 	docker-compose pull
 
