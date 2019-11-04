@@ -32,7 +32,7 @@ shell :
 tail :
 	docker logs -f keduroam-radius
 
-reset : prep pull
+reset : 
 	-docker rm -f keduroam-radius 
 	-docker rm -f keduroam-rest
 	-docker rm -f keduroam-dashboard
