@@ -37,5 +37,5 @@ reset :
 	-docker rm -f keduroam-rest
 	-docker rm -f keduroam-dashboard
 	docker system prune -a -f
-	docker volume create mysql_data
+	docker volume create mysql_data 
 
