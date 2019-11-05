@@ -39,3 +39,11 @@ reset :
 	docker system prune -a -f
 	docker volume create mysql_data 
 
+radiuslog:
+	docker logs keduroam-radius
+
+dblog:
+	docker logs keduroam-rest
+
+dashboardlog:
+	docker logs keduroam-dashboard
