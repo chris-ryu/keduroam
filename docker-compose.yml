@@ -28,8 +28,6 @@ services:
     ports:
     - 4000:4000
     - 27017:27017
-    volumes:
-    - ./mongodb_data:/app/mongodb_data
     env_file:
     - ./envs/db_server_oracle.env
 
@@ -52,7 +50,5 @@ services:
       - ./dashboard_state/log/supervisor:/var/log/supervisor
 
 volumes:       
-  mongodb_data:
-    external: true
   mysql_data:
     external: true

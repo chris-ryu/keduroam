@@ -38,3 +38,11 @@ Output:
 {"message":"The dashboard has been changed by someone else","status":"version-mismatch"}
 ✘ Dashboard eduroam export failed.
 ✘ 1 dashboards export failed.
+Output:
+{"datasource":{"id":1,"orgId":1,"name":"Local Graphite","type":"graphite","typeLogoUrl":"","access":"proxy","url":"http://localhost:8000","password":"","user":"","database":"","basicAuth":false,"basicAuthUser":"","basicAuthPassword":"","withCredentials":false,"isDefault":true,"secureJsonFields":{},"version":1,"readOnly":false},"id":1,"message":"Datasource updated","name":"Local Graphite"}
+✔ Datasource local-graphite exported successfully.
+✔ 1 datasources exported successfully.
+Output:
+{"message":"The dashboard has been changed by someone else","status":"version-mismatch"}
+✘ Dashboard eduroam export failed.
+✘ 1 dashboards export failed.
