@@ -47,3 +47,6 @@ dblog:
 
 dashboardlog:
 	docker logs keduroam-dashboard
+
+shell:
+	docker exec -it keduroam-radius bash
