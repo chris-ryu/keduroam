@@ -10,10 +10,10 @@ prep:
 pull :
 	docker-compose pull
 
-run: prep pull dashboard
-	docker volume create mongodb_data
+run: prep pull 
 	docker volume create mysql_data
 	docker-compose -f docker-compose.yml up -d --force-recreate keduroam-radius
+	docker-compose -f docker-compose.yml up -d keduroam-dashboard
 
 dashboard:
 	docker-compose -f docker-compose.yml up -d keduroam-dashboard
