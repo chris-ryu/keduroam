@@ -16,8 +16,6 @@ services:
     - /:/rootfs:ro
     depends_on:
     - keduroam-rest
-    # - oracledb
-    # - mssqldb
 
   keduroam-rest:
     restart: always
@@ -25,9 +23,6 @@ services:
     image: chrisryu/keduroam-rest:latest
     env_file: 
     - ./envs/global.env
-    ports:
-    - 4000:4000
-    - 27017:27017
     env_file:
     - ./envs/db_server_oracle.env
 
