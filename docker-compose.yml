@@ -20,7 +20,7 @@ services:
   keduroam-rest:
     restart: always
     container_name: keduroam-rest
-    image: chrisryu/keduroam-rest:latest
+    image: chrisryu/keduroam-rest:oracle9i
     env_file: 
     - ./envs/global.env
     env_file:
@@ -31,13 +31,7 @@ services:
     container_name: keduroam-dashboard
     ports:
       - '8080:80'
-      - '81:81'
-      - '8125:8125/udp'
-      - '8126:8126'
-      - '2003:2003'
-    # depends_on:
-    #   - keduroam-rest
-    #   - keduroam-radius
+
     volumes:
       - ./dashboard_state/data/whisper:/opt/graphite/storage/whisper
       - ./dashboard_state/data/grafana:/opt/grafana/data
