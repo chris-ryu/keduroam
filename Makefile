@@ -56,3 +56,6 @@ testlocal:
 
 testroam:
 	docker exec -it keduroam-radius eapol_test -c /root/univs/roaming.conf -s testing123
+
+log:
+	docker logs keduroam-radius -f
