@@ -12,8 +12,8 @@ pull :
 
 run: prep pull 
 	docker volume create mysql_data
-	docker-compose -f docker-compose.yml up -d --force-recreate keduroam-radius
 	docker-compose -f docker-compose.yml up -d keduroam-dashboard
+	docker-compose -f docker-compose.yml up -d --force-recreate keduroam-radius
 
 dashboard:
 	docker-compose -f docker-compose.yml up -d keduroam-dashboard
