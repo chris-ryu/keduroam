@@ -12,8 +12,9 @@ pull :
 
 run: prep pull 
 	docker volume create mysql_data
-	docker-compose -f docker-compose.yml up -d keduroam-dashboard
 	docker-compose -f docker-compose.yml up -d --force-recreate keduroam-radius
+	docker-compose -f docker-compose.yml up -d keduroam-dashboard
+	docker exec -it keduroam-radius service collectd start
 
 dashboard:
 	docker-compose -f docker-compose.yml up -d keduroam-dashboard
@@ -39,11 +40,9 @@ reset :
 	docker system prune -a -f
 	docker volume create mysql_data 
 
-radiuslog:
-	docker logs keduroam-radius
 
 dblog:
-	docker logs keduroam-rest
+	docker logs keduroam-rest -f
 
 dashboardlog:
 	docker logs keduroam-dashboard
@@ -57,5 +56,5 @@ testlocal:
 testroam:
 	docker exec -it keduroam-radius eapol_test -c /root/univs/roaming.conf -s testing123
 
-log:
-	docker logs keduroam-radius -f
+radiuslog:
+	docker exec -it keduroam-radius tail -f /var/log/freeradius/radius.log
