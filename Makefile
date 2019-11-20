@@ -50,3 +50,9 @@ dashboardlog:
 
 shell:
 	docker exec -it keduroam-radius bash
+
+testlocal:
+	docker exec -it keduroam-radius eapol_test -c /root/univs/univ.conf -s testing123
+
+testroam:
+	docker exec -it keduroam-radius eapol_test -c /root/univs/roaming.conf -s testing123
