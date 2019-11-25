@@ -29,6 +29,8 @@ services:
   keduroam-dashboard:
     image: chrisryu/keduroam-dashboard:latest
     container_name: keduroam-dashboard
+    env_file: 
+    - ./envs/global.env
     ports:
       - '8080:80'
 
