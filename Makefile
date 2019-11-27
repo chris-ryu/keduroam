@@ -15,7 +15,6 @@ run: prep pull
 	docker-compose -f docker-compose.yml up -d --force-recreate keduroam-radius
 	docker-compose -f docker-compose.yml up -d keduroam-dashboard
 	docker exec -it keduroam-radius service collectd start
-	docker exec -it keduroam-radius service rsyslog start
 
 dashboard:
 	docker-compose -f docker-compose.yml up -d keduroam-dashboard
