@@ -20,7 +20,7 @@ services:
   keduroam-rest:
     restart: always
     container_name: keduroam-rest
-    image: chrisryu/keduroam-rest:informix
+    image: chrisryu/keduroam-rest:latest
     env_file: 
     - ./envs/global.env
     env_file:

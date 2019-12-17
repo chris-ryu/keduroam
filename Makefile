@@ -8,7 +8,10 @@ prep:
 		dashboard_state/log/elasticsearch
 
 pull :
-	docker-compose pull
+	docker-compose keduroam-radius pull
+	docker-compose keduroam-rest pull
+	docker-compose keduroam-dashboard pull
+
 
 run: prep pull 
 	docker volume create mysql_data
