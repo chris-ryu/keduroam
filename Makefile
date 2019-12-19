@@ -33,9 +33,6 @@ down :
 shell :
 	docker exec -ti keduroam-radius /bin/bash
 
-tail :
-	docker logs -f keduroam-radius
-
 reset : 
 	-docker rm -f keduroam-radius 
 	-docker rm -f keduroam-rest
@@ -44,7 +41,7 @@ reset :
 	docker volume create mysql_data 
 
 
-dblog:
+restlog:
 	docker logs keduroam-rest -f
 
 dashboardlog:
